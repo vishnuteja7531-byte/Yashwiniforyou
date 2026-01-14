@@ -180,6 +180,46 @@ const App: React.FC = () => {
           delay={300}
         />
 
+        {/* Photo Section - Refined Aesthetic Template */}
+        <div className="w-full max-w-4xl mx-auto mt-16 mb-24 px-4 fade-in-up visible" style={{ transitionDelay: '400ms' }}>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
+
+            {/* Photo 1: Oval Frame */}
+            <div className="relative group">
+              <div className="w-64 h-80 md:w-72 md:h-96 rounded-[120px] overflow-hidden border border-white/5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)] transition-transform duration-1000 group-hover:scale-[1.02]">
+                <img
+                  src="/photos/image.1.jpg"
+                  alt="Special Moment 1"
+                  className="w-full h-full object-cover grayscale-[0.3] sepia-[0.2] brightness-[0.9] contrast-[1.1] transition-all duration-1000"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none"></div>
+                <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.3)] pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Photo 2: Soft Rounded Frame */}
+            <div className="relative group md:mt-12">
+              <div className="w-64 h-80 md:w-72 md:h-96 rounded-[40px] overflow-hidden border border-white/5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)] transition-transform duration-1000 group-hover:scale-[1.02]">
+                <img
+                  src="/photos/image.2.jpg"
+                  alt="Special Moment 2"
+                  className="w-full h-full object-cover grayscale-[0.3] sepia-[0.2] brightness-[0.9] contrast-[1.1] transition-all duration-1000"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none"></div>
+                <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.3)] pointer-events-none"></div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Caption */}
+          <div className="mt-16 text-center">
+            <p className="font-editorial text-xl md:text-2xl text-rose-100/60 italic tracking-wide">
+              “This is me — standing here, choosing you.”
+            </p>
+          </div>
+        </div>
+
         {/* The Question - Intimate & Calm */}
         <div className="w-full max-w-md mx-auto mt-16 mb-24 text-center space-y-12 fade-in-up visible" style={{ transitionDelay: '500ms' }}>
 
