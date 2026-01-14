@@ -226,6 +226,78 @@ const App: React.FC = () => {
           </div>
         </div>
 
+        {/* Memories I Want With You Section */}
+        <div className="w-full max-w-5xl mx-auto mt-32 mb-32 px-6 fade-in-up visible" style={{ transitionDelay: '500ms' }}>
+
+          {/* Section Title - Gentle Thought Style */}
+          <div className="text-center mb-20">
+            <h3 className="font-editorial text-2xl md:text-3xl text-rose-100/40 italic tracking-widest font-light">
+              “Memories I want with you”
+            </h3>
+          </div>
+
+          {/* Staggered Memory Layout */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-start">
+
+            {/* Image 3: Small Organic */}
+            <div className="relative group aspect-[4/5] md:translate-y-8">
+              <div className="w-full h-full rounded-[30px] overflow-hidden transition-all duration-1000 group-hover:scale-[1.03] bg-white/5">
+                <img
+                  src="/photos/image.3.jpg"
+                  alt="Future Memory 1"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-1000 opacity-0"
+                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
+                />
+                <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Image 4: Tall/Slightly Larger */}
+            <div className="relative group aspect-[3/4] md:-translate-y-4">
+              <div className="w-full h-full rounded-[60px] overflow-hidden transition-all duration-1000 group-hover:scale-[1.03] bg-white/5">
+                <img
+                  src="/photos/image.4.jpg"
+                  alt="Future Memory 2"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-1000 opacity-0"
+                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
+                />
+                <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Image 5: Medium Organic */}
+            <div className="relative group aspect-[4/5] md:translate-y-12">
+              <div className="w-full h-full rounded-[40px] overflow-hidden transition-all duration-1000 group-hover:scale-[1.03] bg-white/5">
+                <img
+                  src="/photos/image.5.jpg"
+                  alt="Future Memory 3"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-1000 opacity-0"
+                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
+                />
+                <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Image 6: Soft Rounded */}
+            <div className="relative group aspect-[3/4] md:translate-y-0">
+              <div className="w-full h-full rounded-[50px] overflow-hidden transition-all duration-1000 group-hover:scale-[1.03] bg-white/5">
+                <img
+                  src="/photos/image.6.jpg"
+                  alt="Future Memory 4"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-1000 opacity-0"
+                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
+                />
+                <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         {/* The Question - Intimate & Calm */}
         <div className="w-full max-w-md mx-auto mt-16 mb-24 text-center space-y-12 fade-in-up visible" style={{ transitionDelay: '500ms' }}>
 
